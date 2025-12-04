@@ -1,12 +1,9 @@
 from langchain_openai import ChatOpenAI
 from langchain_core.messages import HumanMessage
-from dotenv import load_dotenv
 import os
 
-load_dotenv()
-
-MODEL = os.getenv("OPENAI_MODEL", "gpt-4o-mini")
-OPENAI_KEY = os.getenv("OPENAI_API_KEY")
+MODEL = "gpt-4o-mini"
+OPENAI_KEY = "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"
 
 llm = ChatOpenAI(model=MODEL, api_key=OPENAI_KEY, temperature=0)
 

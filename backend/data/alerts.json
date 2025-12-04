@@ -1,0 +1,9 @@
+[
+  {
+    "reporter_id": "client-user",
+    "classification": "disaster_type: fire  \nseverity: high  \nlocation: Agra  \nnumber_of_people: unknown  \nsummary: A house in Agra is currently on fire.",
+    "authenticity": "authenticity: likely_real  \nconfidence: 0.8  \nreasons:  \n- The report specifies a specific location (Agra) and a clear event (a house on fire), which are typical characteristics of real-time news reports.  \n- The severity is classified as high, indicating a significant incident, which aligns with the nature of fire emergencies that often receive immediate attention from local authorities and media.",
+    "response": "user_message: A house in Agra is currently on fire. Immediate assistance is required to address the situation and ensure the safety of any individuals in the vicinity.  \nrecommended_actions:\n- Dispatch fire response teams to the location in Agra.\n- Alert local emergency services to prepare for potential evacuations and medical assistance.\n- Notify nearby residents to stay clear of the area and follow safety protocols.  \nnotify_admin: true",
+    "admin_alert": "admin_alert: Immediate assistance required for a house fire in Agra.  \npriority: high  \nsend_dashboard_alert: true"
+  }
+]
