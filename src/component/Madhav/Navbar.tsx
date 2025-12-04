@@ -1,7 +1,8 @@
 "use client";
 import { useState } from "react";
-
+import { useRouter } from "next/navigation";  
 const Navbar = () => {
+  const router = useRouter();
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => setIsOpen(!isOpen);
@@ -19,8 +20,17 @@ const Navbar = () => {
             <a href="#about" className="hover:text-gray-300">About</a>
             <a href="#services" className="hover:text-gray-300">Services</a>
             <a href="#contact" className="hover:text-gray-300">Contact</a>
+            <a href="/dashboard">Dashboard</a>
           </div>
+        
 
+
+          <div className="flex flex-row gap-x-4">
+            <button className="bg-white text-blue-600 px-4 py-2 rounded hover:bg-gray-200" onClick={(e) => router.push("/signup")}>Signup</button>
+            <button className="bg-white text-blue-600 px-4 py-2 rounded hover:bg-gray-200" onClick={(e) => router.push("/login")}>
+              Login
+            </button>
+          </div>
           {/* Mobile menu button */}
           <div className="md:hidden">
             <button onClick={toggleMenu} className="focus:outline-none">
